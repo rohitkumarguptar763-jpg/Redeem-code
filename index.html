@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Rohit Remote</title>
+    <style>
+        body {
+            background: #101827;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        .container {
+            background: #1e293b;
+            padding: 30px 20px;
+            border-radius: 18px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #38bdf8;
+        }
+
+        button {
+            background: #0284c7;
+            color: white;
+            padding: 14px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        #status {
+            color: #86efac;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rohit Remote</h1>
+
+        <p>Personal Remote Support Project</p>
+
+        <p>Welcome to Rohit Remote</p>
+
+        <button onclick="connect()">
+            Connect
+        </button>
+
+        <p id="status">
+            Status: Not Connected
+        </p>
+    </div>
+
+    <script>
+        function connect() {
+            document.getElementById("status")
+            .innerText =
+            "Status: Demo Only - No Device Connected";
+        }
+    </script>
+</body>
+</html>
